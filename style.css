@@ -1,0 +1,274 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  margin-top:-1rem; 
+  background-color: rgb(10, 15, 29);
+}
+
+
+
+.navbar-nav .nav-link {
+  color: #fff4f4;
+  font-weight: 600;
+  margin-right: 20px;
+  transition: color 0.3s;
+} .nav-link:hover {
+  color: #ff3131;
+}
+.navbar-icons.navbar-icons  {
+  font-size: 1.2rem;
+color: beige;
+}
+.navbar-icons:hover {
+  color: #ff3131;
+}
+
+
+
+
+
+.animated-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: slideLeft 1s ease-out forwards; color: #fff;
+  opacity: 0;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-bottom: 30px; color: #999;
+}
+
+.watch-img {
+  width: 100%;
+  max-width: 230px;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.shop-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  font-weight: bold;
+  transition: background-position 0.4s ease;
+  background-image: linear-gradient(to right, #ff0000 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.shop-btn:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+.about-section {
+
+  padding: 60px 0;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.watch-card {
+  overflow: hidden;
+  position: relative;
+  background-color:rgb(10, 10, 29);
+  padding-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.watch-card:hover {
+  transform: translateY(-3px);
+}
+
+.watch-card img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.watch-card:hover img {
+  transform: scale(1.05);
+}
+
+.watch-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.watch-card:hover .watch-overlay {
+  opacity:2
+}
+
+.watch-overlay .btn {
+  padding: 10px 20px;
+  font-weight: bold; 
+}
+
+.watch-info h5 {
+  font-size: 1.1rem;
+  margin-bottom: 5px; color: #fff;
+}
+
+.watch-info p {
+  color: #ff0000;
+  font-weight: bold;
+} 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+}
+.feature-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 60px 20px 40px;
+  background-color: #fff;
+}
+
+.feature-card {
+  background-color: #e93030;
+  color: #fff;
+  padding: 28px 22px;
+  border-radius: 6px;
+  width: 300px;
+  box-shadow: 0 8px 20px rgba(233, 48, 48, 0.25);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  font-size: 28px;
+  margin-top: 2px;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 6px;
+}
+
+.feature-text {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+img {
+  max-width: 350px;
+}
+.feature-box {
+  background: #e60000;   
+  border-radius: 4px;
+}
+.footer-links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  color: red;
+}
+.footer-bottom {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.footer-bottom img {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.footer-bottom img:hover {
+    transform: scale(1.1);
+}
+.social-icons  {
+  color: #333;
+  font-size:25px;
+  margin-right: 15px;
+  transition: color 0.3s; padding: 5px 5px;
+}
+.slide-right {
+  opacity: 0;
+  transform: translateX(100px);
+ transition: all 1s ease; }
+
+
+
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);} 
